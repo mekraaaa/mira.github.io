@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PORTFOLIO AMIRAH ATIKAH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#aboutme" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+    <a href="#pastproject" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PAST PROJECT</a>
+    <a href="#achievement" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACHIEVEMENT</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SKILLS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Slideshow Section-->
+<div class="w3-content w3-section" style="width:100%">
+  <img class="mySlides" src="ftkee.jpg" style="width:100%">
+  <img class="mySlides" src="ftkee2.jpg" style="width:100%">
+  <img class="mySlides" src="ftkee3.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<!-- About Me Section -->
+<div class="w3-row w3-padding-64" id="aboutme">
+  <div class="w3-container w3-center w3-grey"></div>
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="GAMBAR MIRA.jpg" class="Normal" alt="Table Setting" width="400" height="500">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <div class="w3-container w3-center w3-light grey"></div>
+    <h2 class="w3-wide w3-center">ABOUT ME</h2>
+    <p class="w3-opacity w3-center"><i>AMIRAH ATIKAH BINTI AMIR MURAD</i></p><br>
+    <p class="w3-large">Hi, my name is Amirah Atikah Binti Amir Murad, I am 23 years old and currently in semester 5. I have been at University Malaysia Pahang for two years now for Bachelor of Technology (Industrial Electronics Automation) with honours.  I joined at the start of 1st semester, and have thoroughly enjoyed myself here. This univeristy is great, the people are fantastic and the atmosphere is one that makes you actually want to learn. Beside that,  I was born and raised here in Kuantan city and grew up here.</p>
+    <p class="w3-large">Before I joined UMP I was studying at the Vocational College for four years at Kolej Vokasional Sultan Ahmad Shah, Rompin Pahang and grad with overall cgpa 3.66. I have attached the detailed documents for your kind perusal.</p>
+  </div>
+     <a href="C:\Users\HP PAVILION GAMING\OneDrive\Desktop\DEGREE UMP\DR RIZAL\HTML\RESUME AMIRAH ATIKAH.pdf" download="GFG">
+     <button type="button">Download Resume</button></a>
+</div>
+</div>
+
+<hr>
+
+<!-- Past Project Section-->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="pastproject"></div>
+<div class="w3-container w3-center w3-white">
+  <h2 class="w3-wide w3-center">MY PAST PROJECT</h2>
+    <p class="w3-opacity w3-center"><i>This is my past project at University Malaysia Pahang</i></p><br>
+
+<!-- Grid  -->
+     <div class="w3-col l3 m6 w3-pale yellow w3-container w3-padding-16 " style="width:50%">
+    <img src="wallE1.jpg" alt="smartrobot" style="width:50%" class="w3-hover-opacity">
+      <h3>SMART ROBOT </h3>
+      <p class="w3-opacity">Features</p>
+      <li>Color Detection</li>
+      <li>Remotely Controlled</li>
+      <li>Line Follower</li>
+      <li>Temperature & Humidity Detection</li>
+      <li>Obstacle Detector</li>
+  </div>
+
+  <div class="w3-col l3 m6 w3-lime w3-container w3-padding-16" style="width:50%">
+    <img src="testingstation.jpg" alt="testingstation" style="width:50%" class="w3-hover-opacity">
+      <h3>PLC TESTING STATION</h3>
+      <p class="w3-opacity">Overview</p>
+      <p class="w3-normal">The testing station is in charge of identifying the color, material, and height of
+        workpieces before sending them on to the next workstation. The testing station is in charge of the
+        following tasks. Obtaining information to determining whether the workpiece is red, metal, or
+        black, and measuring height, and comparing specified attributes to reference values, and making
+        a conclusion reject black and red workpieces and pass metal workpieces. Apart from these
+        features, the testing station must be able to track the position of workpieces and transport them
+        from the sensing module to the height measurement module via the lift module and ejecting
+        pistons, and then to the next station via the slide module.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-lime w3-container w3-padding-16" style="width:50%">
+      <img src="3-Storey Beauty Centre.jpg" alt="3Store Beauty" style="width:65%" class="w3-hover-opacity">
+        <h3>CISCO STORE NETWORK SYSTEM</h3>
+        <p class="w3-opacity">Objectives</p>
+        <li> To apply data communication tools and working principles of measurement and
+          instrumentation to further understand the theoretical concepts.</li>
+        <li>To justify a small network technology including topology maps or network maps./li>
+       </div>
+
+    <div class="w3-col l3 m6 w3-pale yellow w3-container w3-padding-16" style="width:50%">
+        <img src="smartordering.PNG" alt="ORDERING" style="width:50%" class="w3-hover-opacity">
+          <h3>SMART ORDERING SYSTEM</h3>
+          <p class="w3-opacity">Objectives</p>
+          <li>To eliminate two-way contact, for food ordering</li>
+          <li> To create a system that can transform the way food is managed in the face of a
+            pandemic</li>
+          <li> To save time and manpower by employing cutting-edge solutions that require less
+            time than employing human workers</li>
+         </div>
+
+    <div class="w3-col l3 m6 w3-pale yellow w3-container w3-padding-16" style="width:50%">
+          <img src="smartlocker.PNG" alt="LOCKER" style="width:68%" class="w3-hover-opacity">
+            <h3>SMART LOCKER (AutoCAD)</h3>
+           </div> 
+           
+    <div class="w3-col l3 m6 w3-lime w3-container w3-padding-16" style="width:50%">
+          <img src="classroom.PNG" alt="CLASSROOM" style="width:70%" class="w3-hover-opacity">
+          <h3>CLASSROOM ENTRY</h3>
+          <p class="w3-opacity">Overview</p>
+          <p class="w3-normal">A system that has the capability to count a total amount of students entering a 
+            classroom.If associated with the current COVID-19 virus outbreak, it’s important to take note of  one’s well-being.Besides counting a number of entries, we also will know their details information.</p>
+          
+             </div> 
+  
+  </div>
+</div>
+
+
+<!-- Achievement Section-->
+<div class="w3-white" id="achievement">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">MY ACHIEVEMENT</h2>
+    <p class="w3-opacity w3-center"><i>This is my achievement during my time at University Malaysia Pahang</i></p><br>
+
+<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+<div class="w3-third w3-margin-bottom">
+  <img src="yss.jpg" alt="Kuala Lumpur" style="width:100%" class="w3-hover-opacity">
+  <div class="w3-container w3-white">
+  <p><b>Kuala Lumpur</b></p>
+  <p class="w3-opacity">Sat 4 December 2021</p>
+  <p>Represented UMP and won RM2.5K for Volunteer Leadership Development Programme</p>
+</div>
+
+</div>
+  <div class="w3-third w3-margin-bottom">
+    <img src="mapum.jpg" alt="Terengganu" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Terengganu</b></p>
+      <p class="w3-opacity">Wed 14 Sept 2022</p>
+      <p>Best Volunteer Program Leader Award Finalist for Institut Pengajian Tinggi Awam all over Malaysia</p>
+</div>
+ 
+</div>
+  <div class="w3-third w3-margin-bottom">
+    <img src="dekan.jpg" alt="Pahang" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Pahang</b></p>
+      <p class="w3-opacity">From 2020-2022</p>
+      <p>Dean List every semester for Bachelor in Electronic Industrial Automation (University Malaysia Pahang)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-white" id="skills">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">MY SKILLS</h2>
+    <p class="w3-opacity w3-center"><i>For your information, this is my knowledge and skills </i></p><br>
+
+<!-- Grid  -->
+     <div class="w3-col l3 m6 w3-khaki w3-container w3-padding-16 " style="width:50%">
+      <h3>Raspberry Pi</h3>
+      <p>Knowledge:</p>
+      <li>Installation Software</li>
+      <li>Update & Upgrade Software</li>
+      <li>Keypad Coding</li>
+      <li>PIR</li>
+      <li>Remotely Access with VNC Viewer & Putty SSH</li>
+  </div>
+
+    <div class="w3-col l3 m6 w3-lime w3-container w3-padding-16" style="width:50%">
+      <h3>AutoCAD</h3>
+      <p>Knowledge:</p>
+      <li>Dimension</li>
+      <li>Array</li>
+      <li>Fillet</li>
+      <li>Hatch</li>
+      <li>Isometric Design</li>
+    </div>
+
+    <div class="w3-col l3 m6 w3-lime w3-container w3-padding-16"style="width:50%">
+      <h3>Database</h3>
+      <p>Knowledge:</p>
+      <li>SQL</li>
+      <li>Display Data</li>
+      <li>Insert Data</li>
+      <li>Firebase</li>
+      <li>Intergrate with Python & HTML</li>
+    </div>
+
+    <div class="w3-col l3 m6 w3-khaki w3-container w3-padding-16" style="width:50%">
+      <h3>Programming</h3>
+      <p>Knowledge:</p>
+      <li>C Language</li>
+      <li>Python</li>
+      <li>Arduino</li>
+      <li>MIT App Inventor</li>
+      <li>Thunkable</li>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-khaki w3-container w3-padding-16" style="width:50%">
+      <h3>Network</h3>
+      <p>Knowledge:</p>
+      <li>Assign & pin IP Address</li>
+      <li>Create Topology</li>
+      <li>Configure Router & Switch</li>
+    </div>
+
+      <div class="w3-col l3 m6 w3-lime w3-container w3-padding-16" style="width:50%">
+        <h3>PLC</h3>
+        <p>Knowledge:</p>
+        <li>Ladder Diagram</li>
+        <li>Function Block Diagram</li>
+        <li>Structured Text</li>
+      </div>
+</div5>
+
+</div>
+</div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <h2 class="w3-wide w3-center">CONTACT</h2>
+  <p class="w3-opacity w3-center"><i>Got anything to say? Drop a note!</i></p>
+  <div class="w3-row w3-padding-32">
+    <div class="w3-col m6 w3-large w3-margin-bottom">
+      <i class="fa fa-map-marker" style="width:30px"></i> Pekan Pahang, MALAYSIA<br>
+      <i class="fa fa-phone" style="width:30px"></i> Phone: +60 189516438<br>
+      <i class="fa fa-envelope" style="width:30px"> </i> Email: mrhtkh@gmail.com<br>
+    </div>
+    <div class="w3-col m6">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer  -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"> 
+  <p class="w3-center"><em>Want to discover more about me? Check out the link below</p> 
+  <div class="w3-xlarge w3-section"> 
+    <a href="https://www.facebook.com/amirah.atikah.35/"><i class="fa fa-facebook-official w3-hover-opacity"></i> 
+    <a href="https://www.instagram.com/mekraaaa___/" ><i class="fa fa-instagram w3-hover-opacity"></i> 
+    <a href="https://twitter.com/_mekraa"><i class="fa fa-twitter w3-hover-opacity"></i> 
+      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
+</body>
+</html>
